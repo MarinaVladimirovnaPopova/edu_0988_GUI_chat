@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+    <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="300" prefWidth="275" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gui_caht_0988.Controller">
+        <TextArea fx:id="textArea" editable="false" prefHeight="250" prefWidth="275" style="-fx-control-inner-background: #E6E6FA; -fx-font-family: Consolas; -fx-highlight-fill: #00ff00; -fx-highlight-text-fill: #0000FF; -fx-text-fill: #00ff00;">
+            <font>
+                <Font name="JetBrains Mono Regular" size="16.0" />
+            </font>
+            <effect>
+                <Lighting diffuseConstant="1.44" specularConstant="2.0" specularExponent="40.0" surfaceScale="1.28">
+                    <bumpInput>
+                        <Shadow radius="10.68" width="23.72" />
+                    </bumpInput>
+                    <light>
+                        <Light.Distant />
+                    </light>
+                </Lighting>
+            </effect></TextArea>
+        <HBox cache="true">
+            <TextField fx:id="textField" onAction="#send" prefHeight="25" prefWidth="195" style="-fx-background-color: #B0C4DE;">
+                <effect>
+                    <InnerShadow blurType="TWO_PASS_BOX" choke="1.0" height="10.37" radius="2.0925" width="0.0">
+                        <color>
+                            <Color red="0.1838206648826599" green="0.16812865436077118" blue="0.30263158679008484" opacity="0.8299999833106995" />
+                        </color>
+                    </InnerShadow>
+                </effect></TextField>
+            <Button onAction="#send" prefHeight="25" prefWidth="80" style="-fx-background-color: #483D8B;" text="Отправить" textAlignment="CENTER" textFill="#e8e8fa" textOverrun="WORD_ELLIPSIS" underline="true">
+                <font>
+                    <Font name="System Bold" size="12.0" />
+                </font>
+                <effect>
+                    <DisplacementMap>
+                        <mapData>
+                            <FloatMap />
+                        </mapData>
+                    </DisplacementMap>
+                </effect></Button>
+        </HBox>
+        <Button onAction="#connect" prefHeight="25" prefWidth="Infinity" text="Подключиться" textAlignment="CENTER" textFill="DARKSLATEBLUE" underline="true">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Button>
+        <effect>
+            <DropShadow blurType="TWO_PASS_BOX" height="65.15" radius="32.095" width="65.23">
+                <color>
+                    <Color red="0.09521199017763138" green="0.0794956162571907" blue="0.19736842811107635" />
+                </color>
+            </DropShadow>
+        </effect>
+
+
+    </VBox>
+
+
